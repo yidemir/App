@@ -1,0 +1,29 @@
+{
+    "name": "yidemir/app",
+    "description": "DemirApp Minimal PHP Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yılmaz Demir",
+            "email": "demiriy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Demir\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox --colors=always tests"
+    }
+}
