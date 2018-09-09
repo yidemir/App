@@ -14,7 +14,8 @@ Simple and minimal yet another PHP 7 Framework
 * and much more
 
 Documentation is coming soon.
-Türkçe dökümantasyon yakında yayınlanacak.
+
+Türkçe dökümantasyona [buradan](https://yilmazdemir.com.tr/demir-app-framework) ulaşabilirsiniz.
 
 ## Installation
 The recommended way to install is via Composer:
