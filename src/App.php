@@ -222,11 +222,12 @@ final class App
 
   /**
    * @param string $route
+   * @param array $args
    * @throws \Exception
    */
-  public static function redirect(string $route)
+  public static function redirect(string $route, ...$args)
   {
-    $url = static::url($route);
+    $url = static::url($route, $args);
     header("Location: {$url}");
   }
 
