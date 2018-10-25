@@ -787,7 +787,7 @@ final class App
           $uri = $_SERVER['REQUEST_URI'];
         } else {
           $uri = $_SERVER['REQUEST_URI'];
-          $uri = exploe('?', $uri);
+          $uri = explode('?', $uri);
           $uri = $uri[0];
         }
         
