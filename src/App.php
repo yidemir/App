@@ -781,9 +781,17 @@ final class App
       /**
        * @return string
        */
-      public function uri() : string
+      public function uri(bool $queryString = false) : string
       {
-        return $_SERVER['REQUEST_URI'];
+        if ($queryString) {
+          $uri = $_SERVER['REQUEST_URI'];
+        } else {
+          $uri = $_SERVER['REQUEST_URI'];
+          $uri = exploe('?', $uri);
+          $uri = $uri[0];
+        }
+        
+        return $uri;
       }
 
       /**
