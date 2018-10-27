@@ -801,7 +801,7 @@ final class App
       public function method($is = null)
       {
         if (isset($_POST['_method'])) {
-          $method = strtoupper($_POST['_method']);
+          $_SERVER['REQUEST_METHOD'] = strtoupper($_POST['_method']);
         }
 
         if (isset($_SERVER['REQUEST_METHOD'])) {
